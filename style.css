@@ -148,23 +148,46 @@ div.fadeIn {
 
 @media (max-width:800px){
     .player-hand{
-        margin-left: 50px;
+        margin-left: inherit;
+        max-width: 100%;
+        display: block;
+    }
+    .player-score{
+     color: aqua;
+        font-size: 20rem;
+    }
+    .computer-score{
+        text-overflow: clip;
+        color: aqua;
     }
     .computer-hand{
-        margin-right: 50px
+        margin-right: inherit;
+        max-width: 100%;
+        display: block;
+       
     }
     .intro h1{
-        margin-left: 60px;
+        margin-left: 20px;
         flex-direction: row;
+        font-display:  block;
+        object-fit: contain;
+        overflow: scroll;
+         color: aqua;
     }
     .options {
     
         flex-direction: column;
-        flex-basis: 40%;
-        margin: 
+        flex-basis: 100%;
     }
     .options button{
-        margin-bottom: 5px;
+        margin-bottom: 1em;
+    }
+    .winner{
+        font-display: block;
+        font-size: 2rem;
+        max-width: 100%;
+        overflow: hidden;
+         color: aqua;
+        
     }
 }
-
